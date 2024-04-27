@@ -11,4 +11,5 @@ public interface UserService {
     User save(CreateUserRequest userRequest);
 
     Optional<User> findById(UUID id);
+    Optional<User> findUserByEmail(String email);
 }
